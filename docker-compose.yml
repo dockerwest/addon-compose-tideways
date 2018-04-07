@@ -6,6 +6,7 @@ services:
 
   application:
     environment:
+      - 'PROFILER=tideways'
       - TIDEWAYS_APIKEY=${TIDEWAYS_APIKEY}
       - TIDEWAYS_SAMPLERATE=${TIDEWAYS_SAMPLERATE:-30}
       - TIDEWAYS_COLLECT=${TIDEWAYS_COLLECT:-full}
